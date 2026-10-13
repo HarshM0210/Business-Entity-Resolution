@@ -1,0 +1,16 @@
+# Python 3.12, CUDA 13 (torch cu130 wheel)
+anyascii==0.3.2
+huggingface_hub==1.33.0
+lightgbm==4.7.0
+numpy==2.4.4
+pandas==3.0.2
+protobuf==7.36.2
+pyarrow==25.0.1
+RapidFuzz==3.14.6
+safetensors==0.8.0
+scikit-learn==1.8.0
+scipy==1.18.1
+sentencepiece==0.2.2
+tokenizers==0.23.2
+torch==2.14.0
+transformers==5.17.0

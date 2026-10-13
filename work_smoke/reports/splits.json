@@ -1,0 +1,35 @@
+{
+  "ce": {
+    "n": 3000,
+    "countries": {
+      "us": 1782,
+      "india": 1218
+    },
+    "singleton_rate": 0.05633333333333333
+  },
+  "stack": {
+    "n": 3000,
+    "countries": {
+      "us": 1791,
+      "india": 1209
+    },
+    "singleton_rate": 0.05466666666666667
+  },
+  "val": {
+    "n": 2000,
+    "countries": {
+      "us": 1206,
+      "india": 794
+    },
+    "singleton_rate": 0.058
+  },
+  "lce": {
+    "n": 2000,
+    "countries": {
+      "us": 1192,
+      "india": 808
+    },
+    "singleton_rate": 0.0485
+  },
+  "q_test": 5000
+}

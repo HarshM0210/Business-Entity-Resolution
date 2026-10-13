@@ -1,0 +1,74 @@
+{
+  "summary": {
+    "max_recoverable_gain": 0.0204126162225835,
+    "best_config": "noce",
+    "recommendation": "full_transformer"
+  },
+  "details": {
+    "noce": {
+      "config": "noce",
+      "stack": {
+        "current": 0.9763045084995817,
+        "oracle": 0.9967171247221652,
+        "recoverable": 0.0204126162225835,
+        "fn_count": 29183,
+        "fp_count": 4672
+      },
+      "val": {
+        "current": 0.9775575321736036,
+        "oracle": 0.9968113876857607,
+        "recoverable": 0.01925385551215708
+      }
+    },
+    "ce_nox": {
+      "config": "ce_nox",
+      "stack": {
+        "current": 0.98397788269091,
+        "oracle": 0.9967171247221652,
+        "recoverable": 0.012739242031255205,
+        "fn_count": 20627,
+        "fp_count": 2944
+      },
+      "val": {
+        "current": 0.9842137272603066,
+        "oracle": 0.9968113876857607,
+        "recoverable": 0.012597660425454071
+      }
+    },
+    "ce": {
+      "config": "ce",
+      "stack": {
+        "current": 0.9868267997857633,
+        "oracle": 0.9967171247221652,
+        "recoverable": 0.009890324936401962,
+        "fn_count": 16743,
+        "fp_count": 1762
+      },
+      "val": {
+        "current": 0.9873077241011994,
+        "oracle": 0.9968113876857607,
+        "recoverable": 0.00950366358456134
+      }
+    },
+    "ce_s": {
+      "config": "ce_s",
+      "stack": {
+        "current": 0.987128635192419,
+        "oracle": 0.9967171247221652,
+        "recoverable": 0.009588489529746225,
+        "fn_count": 16725,
+        "fp_count": 1552
+      },
+      "val": {
+        "current": 0.9877111321492411,
+        "oracle": 0.9968113876857607,
+        "recoverable": 0.009100255536519608
+      }
+    }
+  },
+  "thresholds": {
+    "full_transformer": 0.002,
+    "minimal_transformer": 0.001,
+    "skip": "< 0.001"
+  }
+}

@@ -1,0 +1,159 @@
+[2026-09-27 04:18:25] supervisor: runner start (restart 0/20)
+09-27 04:18:26 pipeline INFO pipeline start: work=/scratch/user4/dai/model-5/work smoke=0 lce=True gpus=[(0, 32611, 100), (1, 42663, 100)]
+09-27 04:18:26 pipeline INFO [start] fetch pid=152476 gpus=-
+09-27 04:18:41 pipeline INFO [done] fetch (0.3 min) gpus=[]
+09-27 04:18:41 pipeline INFO [start] manifest pid=152880 gpus=-
+09-27 04:20:11 pipeline INFO [done] manifest (1.5 min) gpus=[]
+09-27 04:20:11 pipeline INFO [start] prep pid=154411 gpus=-
+09-27 04:20:26 pipeline INFO [done] prep (0.3 min) gpus=[]
+09-27 04:20:26 pipeline INFO [start] test_tsv pid=154847 gpus=-
+09-27 04:20:26 pipeline INFO [start] splits pid=154848 gpus=-
+09-27 04:20:41 pipeline INFO [done] test_tsv (0.3 min) gpus=[]
+09-27 04:21:11 pipeline INFO [start] dense_train_e5 pid=155751 gpus=['1']
+09-27 04:21:11 pipeline INFO [start] dense_train_bge pid=155752 gpus=['0']
+09-27 04:21:11 pipeline INFO [start] dense_train_e5s pid=155753 gpus=['1']
+09-27 04:21:11 pipeline INFO [start] lex_train pid=155754 gpus=-
+09-27 04:21:11 pipeline INFO [start] dense_test_e5 pid=155755 gpus=['0']
+09-27 04:21:11 pipeline INFO waiting for a GPU with 16000 MB free for dense_test_bge: [(0, 32611, 100), (1, 42663, 100)]
+09-27 04:21:11 pipeline INFO [start] lex_test pid=155756 gpus=-
+09-27 04:21:26 pipeline INFO [done] splits (1.0 min) gpus=[]
+09-27 04:23:27 pipeline INFO [done] lex_test (2.3 min) gpus=[]
+09-27 04:23:57 pipeline INFO [done] lex_train (2.8 min) gpus=[]
+09-27 04:25:12 pipeline INFO [done] dense_train_e5s (4.0 min) gpus=[1]
+09-27 04:26:13 pipeline INFO [start] dense_test_bge pid=161898 gpus=['1']
+09-27 04:26:58 pipeline INFO [done] dense_train_e5 (5.8 min) gpus=[1]
+09-27 04:28:28 pipeline INFO [done] dense_train_bge (7.3 min) gpus=[0]
+09-27 04:28:28 pipeline INFO [start] dense_test_e5s pid=164664 gpus=['0']
+09-27 04:31:14 pipeline INFO [start] hop_train pid=167539 gpus=['1']
+09-27 04:35:59 pipeline INFO [done] dense_test_bge (9.8 min) gpus=[1]
+09-27 04:37:44 pipeline INFO [done] dense_test_e5 (16.6 min) gpus=[0]
+09-27 04:38:29 pipeline INFO [done] dense_test_e5s (10.0 min) gpus=[0]
+09-27 04:40:44 pipeline INFO [done] hop_train (9.5 min) gpus=[1]
+09-27 04:40:44 pipeline INFO [start] block_train pid=177511 gpus=-
+09-27 04:42:44 pipeline ERROR [fail] block_train rc=-15 attempt 1/5 -> see /scratch/user4/dai/model-5/work/logs/block_train.log
+09-27 04:44:44 pipeline INFO [start] block_train pid=181431 gpus=-
+09-27 04:48:14 pipeline INFO [done] block_train (3.5 min) gpus=[]
+09-27 04:48:14 pipeline INFO [start] ce_train_b pid=184790 gpus=['1']
+09-27 04:48:14 pipeline INFO [start] ce_train_m pid=184791 gpus=['1']
+09-27 04:48:14 pipeline INFO [start] hop_test pid=184792 gpus=['0']
+09-27 04:48:14 pipeline INFO [start] cos_train_e5 pid=184793 gpus=['1']
+09-27 04:48:14 pipeline INFO [start] cos_train_bge pid=184794 gpus=['1']
+09-27 04:48:14 pipeline INFO [start] cos_train_e5s pid=184795 gpus=['1']
+09-27 04:48:29 pipeline INFO [done] hop_test (0.3 min) gpus=[0]
+09-27 04:48:29 pipeline INFO [start] block_test pid=186020 gpus=-
+09-27 04:49:59 pipeline INFO [done] cos_train_e5s (1.8 min) gpus=[1]
+09-27 04:51:14 pipeline INFO [done] cos_train_bge (3.0 min) gpus=[1]
+09-27 04:51:29 pipeline INFO [done] cos_train_e5 (3.3 min) gpus=[1]
+09-27 04:51:29 pipeline INFO [done] block_test (3.0 min) gpus=[]
+09-27 04:51:29 pipeline INFO [start] feat_train pid=189849 gpus=-
+09-27 04:51:29 pipeline INFO [start] cos_test_e5 pid=189852 gpus=['0']
+09-27 04:51:29 pipeline INFO [start] cos_test_bge pid=189853 gpus=['0']
+09-27 04:51:29 pipeline INFO [start] cos_test_e5s pid=189854 gpus=['0']
+09-27 04:56:30 pipeline INFO [done] cos_test_e5s (5.0 min) gpus=[0]
+09-27 04:58:30 pipeline INFO [done] cos_test_bge (7.0 min) gpus=[0]
+09-27 04:59:45 pipeline INFO [done] cos_test_e5 (8.3 min) gpus=[0]
+09-27 04:59:45 pipeline INFO [start] feat_test pid=201073 gpus=-
+09-27 05:28:45 pipeline ERROR [fail] feat_test rc=-15 attempt 1/5 -> see /scratch/user4/dai/model-5/work/logs/feat_test.log
+09-27 05:30:45 pipeline INFO [start] feat_test pid=243047 gpus=-
+09-27 05:37:15 pipeline INFO [done] ce_train_m (49.0 min) gpus=[1]
+09-27 05:52:30 pipeline INFO [done] feat_train (61.0 min) gpus=[]
+09-27 05:52:30 pipeline INFO [start] f1_select pid=270010 gpus=-
+09-27 06:02:45 pipeline INFO [done] f1_select (10.3 min) gpus=[]
+09-27 06:02:45 pipeline INFO [start] stage1_train pid=286228 gpus=-
+09-27 06:24:16 pipeline INFO [done] ce_train_b (96.0 min) gpus=[1]
+09-27 07:03:31 pipeline INFO [done] feat_test (92.8 min) gpus=[]
+09-27 07:03:46 pipeline INFO [start] lce_train pid=376632 gpus=['1']
+09-27 07:03:46 pipeline INFO [start] stage1_test pid=376633 gpus=['0', '1']
+09-27 07:03:46 pipeline INFO [start] s2set_train pid=376634 gpus=-
+09-27 07:04:01 pipeline INFO [done] stage1_train (61.3 min) gpus=[]
+09-27 07:04:31 pipeline INFO [done] s2set_train (0.8 min) gpus=[]
+09-27 07:04:31 pipeline INFO [start] ce_infer_train_m pid=379451 gpus=['0', '1']
+09-27 07:04:31 pipeline INFO [start] ce_infer_train_b pid=379452 gpus=['0', '1']
+09-27 07:22:01 pipeline INFO [done] ce_infer_train_m (17.5 min) gpus=[0, 1]
+09-27 07:32:31 pipeline ERROR [fail] stage1_test rc=-15 attempt 1/5 -> see /scratch/user4/dai/model-5/work/logs/stage1_test.log
+09-27 07:34:32 pipeline INFO [start] stage1_test pid=418456 gpus=['0', '1']
+09-27 07:35:17 pipeline INFO [done] ce_infer_train_b (30.8 min) gpus=[0, 1]
+09-27 08:26:08 pipeline ERROR [kill] lce_train: runner exiting
+09-27 08:26:08 pipeline ERROR [kill] stage1_test: runner exiting
+[2026-09-27 08:47:43] supervisor: runner start (restart 0/20)
+09-27 08:47:44 pipeline INFO pipeline start: work=/scratch/user4/dai/model-5/work smoke=0 lce=True gpus=[(0, 66467, 100), (1, 75093, 100)]
+09-27 08:47:44 pipeline INFO [start] stage1_test pid=557207 gpus=-
+09-27 08:47:44 pipeline INFO [start] ename_test pid=557208 gpus=-
+09-27 08:47:44 pipeline INFO [start] ename_train pid=557209 gpus=-
+09-27 08:47:59 pipeline INFO [done] stage1_test (0.3 min) gpus=[]
+09-27 08:52:15 pipeline INFO [done] ename_train (4.5 min) gpus=[]
+09-27 08:52:15 pipeline INFO [start] featx_train pid=562333 gpus=-
+09-27 08:54:00 pipeline INFO [start] featx_test pid=565891 gpus=-
+09-27 08:54:15 pipeline INFO [done] ename_test (6.5 min) gpus=[]
+09-27 09:06:30 pipeline INFO [done] featx_train (14.3 min) gpus=[]
+09-27 09:06:30 pipeline INFO [start] stage1x_train pid=610221 gpus=-
+09-27 09:09:00 pipeline INFO [done] stage1x_train (2.5 min) gpus=[]
+09-27 09:09:00 pipeline INFO [start] s2set_train pid=617505 gpus=-
+09-27 09:10:00 pipeline INFO [done] s2set_train (1.0 min) gpus=[]
+09-27 09:10:00 pipeline INFO [start] rev_train pid=620309 gpus=['0']
+09-27 09:10:00 pipeline INFO [start] ce_infer_train_m pid=620310 gpus=['0', '1']
+09-27 09:10:00 pipeline INFO [start] ce_infer_train_b pid=620311 gpus=['0', '1']
+09-27 09:10:00 pipeline INFO [start] lce_infer_train pid=620312 gpus=['0', '1']
+09-27 09:14:45 pipeline INFO [done] rev_train (4.8 min) gpus=[0]
+09-27 09:15:30 pipeline INFO [done] featx_test (21.5 min) gpus=[]
+09-27 09:15:30 pipeline INFO [start] stage1x_test pid=637917 gpus=-
+09-27 09:19:31 pipeline ERROR [kill] ce_infer_train_m: runner exiting
+09-27 09:19:31 pipeline ERROR [kill] ce_infer_train_b: runner exiting
+09-27 09:19:32 pipeline ERROR [kill] lce_infer_train: runner exiting
+09-27 09:19:32 pipeline ERROR [kill] stage1x_test: runner exiting
+[2026-09-27 09:19:57] supervisor: runner start (restart 0/20)
+09-27 09:19:58 pipeline INFO pipeline start: work=/scratch/user4/dai/model-5/work smoke=0 lce=True gpus=[(0, 75812, 86), (1, 55891, 100)]
+09-27 09:19:58 pipeline INFO [start] stage1x_test pid=644996 gpus=-
+09-27 09:19:58 pipeline INFO [start] ce_infer_train_m pid=644999 gpus=['0', '1']
+09-27 09:19:58 pipeline INFO [start] ce_infer_train_b pid=645000 gpus=['0', '1']
+09-27 09:19:58 pipeline INFO [start] lce_infer_train pid=645001 gpus=['0', '1']
+09-27 09:24:13 pipeline INFO [done] ce_infer_train_m (4.3 min) gpus=[0, 1]
+09-27 09:26:58 pipeline INFO [done] stage1x_test (7.0 min) gpus=[]
+09-27 09:26:58 pipeline INFO [start] s2set_test pid=659437 gpus=-
+09-27 09:29:13 pipeline INFO [done] s2set_test (2.3 min) gpus=[]
+09-27 09:29:13 pipeline INFO [start] ce_infer_test_b pid=664383 gpus=['0', '1']
+09-27 09:29:13 pipeline INFO [start] ce_infer_test_m pid=664384 gpus=['0']
+09-27 09:29:13 pipeline INFO [start] rev_test pid=664385 gpus=['0']
+09-27 09:33:58 pipeline INFO [done] ce_infer_train_b (14.0 min) gpus=[0, 1]
+09-27 09:33:58 pipeline INFO [start] stage2_prelim pid=673865 gpus=-
+09-27 09:35:13 pipeline ERROR [fail] stage2_prelim rc=1 attempt 1/5 -> see /scratch/user4/dai/model-5/work/logs/stage2_prelim.log
+09-27 09:37:13 pipeline INFO [start] stage2_prelim pid=681563 gpus=-
+09-27 09:44:43 pipeline INFO [done] lce_infer_train (24.8 min) gpus=[0, 1]
+09-27 09:47:28 pipeline INFO [done] rev_test (18.3 min) gpus=[0]
+09-27 09:54:43 pipeline INFO [done] stage2_prelim (17.5 min) gpus=[]
+09-27 09:54:43 pipeline INFO [start] stage2_train pid=702073 gpus=-
+09-27 09:54:43 pipeline INFO [start] loco pid=702074 gpus=-
+09-27 10:00:58 pipeline INFO [done] loco (6.3 min) gpus=[]
+09-27 10:07:43 pipeline INFO [done] stage2_train (13.0 min) gpus=[]
+09-27 10:07:43 pipeline INFO waiting for a GPU with 16000 MB free for lce_infer_test: [(0, 9688, 100), (1, 12793, 100)]
+09-27 10:14:15 pipeline INFO [start] lce_infer_test pid=726904 gpus=['1']
+09-27 10:14:30 pipeline INFO [done] lce_infer_test (0.3 min) gpus=[1]
+09-27 10:22:15 pipeline ERROR [fail] ce_infer_test_m rc=1 attempt 1/5 -> see /scratch/user4/dai/model-5/work/logs/ce_infer_test_m.log
+09-27 10:24:16 pipeline INFO [start] ce_infer_test_m pid=742220 gpus=['0', '1']
+09-27 10:32:16 pipeline ERROR [fail] ce_infer_test_m rc=1 attempt 2/5 -> see /scratch/user4/dai/model-5/work/logs/ce_infer_test_m.log
+09-27 10:36:16 pipeline INFO [start] ce_infer_test_m pid=763556 gpus=['0', '1']
+09-27 10:43:16 pipeline ERROR [fail] ce_infer_test_b rc=1 attempt 1/5 -> see /scratch/user4/dai/model-5/work/logs/ce_infer_test_b.log
+09-27 10:45:16 pipeline INFO [start] ce_infer_test_b pid=788972 gpus=['1', '0']
+09-27 10:56:01 pipeline ERROR [fail] ce_infer_test_b rc=1 attempt 2/5 -> see /scratch/user4/dai/model-5/work/logs/ce_infer_test_b.log
+09-27 11:00:01 pipeline INFO [start] ce_infer_test_b pid=829796 gpus=['0', '1']
+09-27 11:53:02 pipeline ERROR [fail] ce_infer_test_b rc=1 attempt 3/5 -> see /scratch/user4/dai/model-5/work/logs/ce_infer_test_b.log
+09-27 11:59:02 pipeline INFO [start] ce_infer_test_b pid=951197 gpus=['1', '0']
+09-27 11:59:17 pipeline ERROR [fail] ce_infer_test_m rc=1 attempt 3/5 -> see /scratch/user4/dai/model-5/work/logs/ce_infer_test_m.log
+09-27 12:05:17 pipeline INFO [start] ce_infer_test_m pid=967366 gpus=['1']
+09-27 12:08:17 pipeline ERROR [fail] ce_infer_test_m rc=1 attempt 4/5 -> see /scratch/user4/dai/model-5/work/logs/ce_infer_test_m.log
+09-27 12:10:37 pipeline ERROR [kill] ce_infer_test_b: runner exiting
+[2026-09-27 12:10:57] supervisor: runner start (restart 0/20)
+09-27 12:10:58 pipeline INFO pipeline start: work=/scratch/user4/dai/model-5/work smoke=0 lce=True gpus=[(0, 28058, 100), (1, 38023, 100)]
+09-27 12:10:58 pipeline INFO [start] ce_infer_test_b pid=983432 gpus=['1', '0']
+09-27 12:10:58 pipeline INFO [start] ce_infer_test_m pid=983433 gpus=['1', '0']
+09-27 12:38:14 pipeline INFO [done] ce_infer_test_m (27.3 min) gpus=[1, 0]
+09-27 13:28:14 pipeline ERROR [fail] ce_infer_test_b rc=1 attempt 1/5 -> see /scratch/user4/dai/model-5/work/logs/ce_infer_test_b.log
+09-27 13:30:14 pipeline INFO [start] ce_infer_test_b pid=1104245 gpus=['1', '0']
+09-27 13:30:44 pipeline INFO [done] ce_infer_test_b (0.5 min) gpus=[1, 0]
+09-27 13:30:44 pipeline INFO [start] stage2_test pid=1105114 gpus=-
+09-27 13:42:44 pipeline INFO [done] stage2_test (12.0 min) gpus=[]
+09-27 13:42:44 pipeline INFO [start] package pid=1116387 gpus=-
+09-27 13:43:29 pipeline INFO [done] package (0.8 min) gpus=[]
+09-27 13:43:29 pipeline INFO pipeline complete
+[2026-09-27 13:43:29] supervisor: runner exited rc=0
+[2026-09-27 13:43:29] supervisor: PIPELINE COMPLETE

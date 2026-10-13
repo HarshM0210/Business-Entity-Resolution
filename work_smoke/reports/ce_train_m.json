@@ -1,0 +1,6 @@
+{
+  "dev_auc": 0.9929000490356326,
+  "steps": 150,
+  "n_train": 33171,
+  "model": "microsoft/mdeberta-v3-base"
+}

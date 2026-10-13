@@ -1,0 +1,19 @@
+{
+  "s2noce: train india": {
+    "india": 0.9400081298102583,
+    "us": 0.9546584312640098
+  },
+  "s2noce: train us": {
+    "india": 0.9296113836006032,
+    "us": 0.9584413019669502
+  },
+  "s2ce: train india": {
+    "india": 0.9566868809755441,
+    "us": 0.9582568368573604
+  },
+  "s2ce: train us": {
+    "india": 0.9545922267468298,
+    "us": 0.9634990021769079
+  },
+  "note": "train country -> F0.5 on each country's val. 'ce' rows are an upper bound: the cross-encoders were trained on both countries' text (README v2 \u00a72.6)"
+}

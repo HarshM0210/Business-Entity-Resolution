@@ -1,0 +1,95 @@
+output:
+total 338272
+drwxrwxr-x  2 user4 user4        73 2026-09-27 16:28:49.140855595 +0530 .
+drwxrwxr-x 13 user4 user4      4096 2026-09-27 16:12:37.490709853 +0530 ..
+-rw-rw-r--  1 user4 user4 249495071 2026-09-27 16:28:49.140234126 +0530 candidate_pairs.tsv
+-rw-rw-r--  1 user4 user4  96888014 2026-09-27 16:28:44.344330312 +0530 matching_results.tsv
+
+work/models:
+total 413516
+drwxrwxr-x  2 user4 user4     4096 2026-09-27 16:12:37.294449943 +0530 .
+drwxrwxr-x 28 user4 user4     4096 2026-09-27 14:17:56.986460962 +0530 ..
+-rw-rw-r--  1 user4 user4     2154 2026-09-27 06:02:41.309308863 +0530 feature_set.json
+-rw-rw-r--  1 user4 user4  8434755 2026-09-27 05:54:07.135171463 +0530 loco_full_india.txt
+-rw-rw-r--  1 user4 user4  9677194 2026-09-27 05:56:56.893446833 +0530 loco_full_us.txt
+-rw-rw-r--  1 user4 user4  9358580 2026-09-27 05:59:06.423335412 +0530 loco_invariant_india.txt
+-rw-rw-r--  1 user4 user4  9697362 2026-09-27 06:01:42.258387497 +0530 loco_invariant_us.txt
+-rw-rw-r--  1 user4 user4  2194629 2026-09-27 09:58:20.675751807 +0530 loco_s2ce_india_2f28035f.txt
+-rw-rw-r--  1 user4 user4  3028607 2026-09-27 10:00:34.249560189 +0530 loco_s2ce_us_2f28035f.txt
+-rw-rw-r--  1 user4 user4  3152976 2026-09-27 09:56:06.410308651 +0530 loco_s2noce_india_54ce76ed.txt
+-rw-rw-r--  1 user4 user4  3478512 2026-09-27 09:56:54.939689458 +0530 loco_s2noce_us_54ce76ed.txt
+-rw-rw-r--  1 user4 user4 24326387 2026-09-27 06:09:21.761719942 +0530 s1_fold0.txt
+-rw-rw-r--  1 user4 user4 33382209 2026-09-27 06:22:07.247169899 +0530 s1_fold1.txt
+-rw-rw-r--  1 user4 user4 28557198 2026-09-27 06:37:15.074450300 +0530 s1_fold2.txt
+-rw-rw-r--  1 user4 user4 26630413 2026-09-27 06:48:06.570297609 +0530 s1_fold3.txt
+-rw-rw-r--  1 user4 user4 28671266 2026-09-27 06:59:33.914965413 +0530 s1_fold4.txt
+-rw-rw-r--  1 user4 user4  3743359 2026-09-27 09:47:42.444946912 +0530 s2_ce_2f28035f_fold0.txt
+-rw-rw-r--  1 user4 user4  3116710 2026-09-27 09:48:17.176255133 +0530 s2_ce_2f28035f_fold1.txt
+-rw-rw-r--  1 user4 user4  3548318 2026-09-27 09:48:54.663237191 +0530 s2_ce_2f28035f_fold2.txt
+-rw-rw-r--  1 user4 user4  3910465 2026-09-27 09:49:31.352435243 +0530 s2_ce_2f28035f_fold3.txt
+-rw-rw-r--  1 user4 user4  3339120 2026-09-27 09:50:03.245859796 +0530 s2_ce_2f28035f_fold4.txt
+-rw-rw-r--  1 user4 user4  3284581 2026-09-27 09:57:07.655145734 +0530 s2_ce_lce_ce_3123d925_fold0.txt
+-rw-rw-r--  1 user4 user4  3912049 2026-09-27 10:01:13.934871326 +0530 s2_ce_lce_ce_3123d925_fold1.txt
+-rw-rw-r--  1 user4 user4  3201068 2026-09-27 10:02:12.301212912 +0530 s2_ce_lce_ce_3123d925_fold2.txt
+-rw-rw-r--  1 user4 user4  3577583 2026-09-27 10:03:12.559960628 +0530 s2_ce_lce_ce_3123d925_fold3.txt
+-rw-rw-r--  1 user4 user4  3744934 2026-09-27 10:04:05.549892115 +0530 s2_ce_lce_ce_3123d925_fold4.txt
+-rw-rw-r--  1 user4 user4  4817322 2026-09-27 09:59:34.609875177 +0530 s2_ce_monly_e0af23bb_fold0.txt
+-rw-rw-r--  1 user4 user4  4132468 2026-09-27 10:01:16.824821160 +0530 s2_ce_monly_e0af23bb_fold1.txt
+-rw-rw-r--  1 user4 user4  4089657 2026-09-27 10:02:37.921998753 +0530 s2_ce_monly_e0af23bb_fold2.txt
+-rw-rw-r--  1 user4 user4  3784182 2026-09-27 10:04:06.513907457 +0530 s2_ce_monly_e0af23bb_fold3.txt
+-rw-rw-r--  1 user4 user4  4202526 2026-09-27 10:04:47.338794605 +0530 s2_ce_monly_e0af23bb_fold4.txt
+-rw-rw-r--  1 user4 user4  4130911 2026-09-27 09:44:08.755756134 +0530 s2_ce_nox_49b5c3c4_fold0.txt
+-rw-rw-r--  1 user4 user4  3698027 2026-09-27 09:44:42.205816363 +0530 s2_ce_nox_49b5c3c4_fold1.txt
+-rw-rw-r--  1 user4 user4  4240593 2026-09-27 09:45:22.708150910 +0530 s2_ce_nox_49b5c3c4_fold2.txt
+-rw-rw-r--  1 user4 user4  3558475 2026-09-27 09:45:55.944673899 +0530 s2_ce_nox_49b5c3c4_fold3.txt
+-rw-rw-r--  1 user4 user4  5106302 2026-09-27 09:46:33.344732334 +0530 s2_ce_nox_49b5c3c4_fold4.txt
+-rw-rw-r--  1 user4 user4  6152271 2026-09-27 09:51:26.904056646 +0530 s2_ce_s_6cdc39da_fold0.txt
+-rw-rw-r--  1 user4 user4  3946928 2026-09-27 09:52:05.658826107 +0530 s2_ce_s_6cdc39da_fold1.txt
+-rw-rw-r--  1 user4 user4  4391824 2026-09-27 09:52:45.020702018 +0530 s2_ce_s_6cdc39da_fold2.txt
+-rw-rw-r--  1 user4 user4  4504536 2026-09-27 09:53:26.176309654 +0530 s2_ce_s_6cdc39da_fold3.txt
+-rw-rw-r--  1 user4 user4  3457254 2026-09-27 09:54:02.684751395 +0530 s2_ce_s_6cdc39da_fold4.txt
+-rw-rw-r--  1 user4 user4  8464060 2026-09-27 09:39:13.869155366 +0530 s2_noce_54ce76ed_fold0.txt
+-rw-rw-r--  1 user4 user4  8450763 2026-09-27 09:40:07.539418394 +0530 s2_noce_54ce76ed_fold1.txt
+-rw-rw-r--  1 user4 user4  9326151 2026-09-27 09:41:05.270818296 +0530 s2_noce_54ce76ed_fold2.txt
+-rw-rw-r--  1 user4 user4  6835936 2026-09-27 09:41:56.053320029 +0530 s2_noce_54ce76ed_fold3.txt
+-rw-rw-r--  1 user4 user4  7769312 2026-09-27 09:42:48.229908062 +0530 s2_noce_54ce76ed_fold4.txt
+-rw-rw-r--  1 user4 user4 92288845 2026-09-27 09:54:38.216303304 +0530 s2_prelim.pkl
+-rw-rw-r--  1 user4 user4     1272 2026-09-27 06:02:51.058396627 +0530 stage1_features.json
+-rw-rw-r--  1 user4 user4     4943 2026-09-27 16:30:25.162728252 +0530 stage2_bundle.json
+-rw-rw-r--  1 user4 user4     4943 2026-09-27 16:12:37.294826097 +0530 stage2_bundle_original.json
+-rw-rw-r--  1 user4 user4     5984 2026-09-27 10:07:32.082227434 +0530 stage2_iso.pkl
+
+work/reports:
+total 216
+drwxrwxr-x  2 user4 user4  4096 2026-09-27 16:31:33.048979637 +0530 .
+drwxrwxr-x 28 user4 user4  4096 2026-09-27 14:17:56.986460962 +0530 ..
+-rw-rw-r--  1 user4 user4   846 2026-09-27 04:46:35.873816032 +0530 blocking_recall.json
+-rw-rw-r--  1 user4 user4   757 2026-09-27 10:05:32.338303115 +0530 ce_ablation.json
+-rw-rw-r--  1 user4 user4   112 2026-09-27 06:24:08.059751829 +0530 ce_train_b.json
+-rw-rw-r--  1 user4 user4   114 2026-09-27 05:37:10.747868210 +0530 ce_train_m.json
+-rw-rw-r--  1 user4 user4   235 2026-09-27 04:52:03.013828315 +0530 cos_stats_bge_test.json
+-rw-rw-r--  1 user4 user4   157 2026-09-27 04:48:53.574073103 +0530 cos_stats_bge_train.json
+-rw-rw-r--  1 user4 user4   235 2026-09-27 04:51:49.068851422 +0530 cos_stats_e5s_test.json
+-rw-rw-r--  1 user4 user4   156 2026-09-27 04:48:33.710937694 +0530 cos_stats_e5s_train.json
+-rw-rw-r--  1 user4 user4   236 2026-09-27 04:52:01.754198714 +0530 cos_stats_e5_test.json
+-rw-rw-r--  1 user4 user4   157 2026-09-27 04:48:56.959735908 +0530 cos_stats_e5_train.json
+-rw-rw-r--  1 user4 user4 10953 2026-09-27 14:17:22.017595499 +0530 Documentation.md
+-rw-rw-r--  1 user4 user4   362 2026-09-27 08:53:59.199377662 +0530 ename_test.json
+-rw-rw-r--  1 user4 user4   384 2026-09-27 08:52:06.163153640 +0530 ename_train.json
+-rw-rw-r--  1 user4 user4   673 2026-09-27 06:02:41.310205584 +0530 f1_select.json
+-rw-rw-r--  1 user4 user4  2948 2026-09-27 10:07:32.296220494 +0530 feature_importance.tsv
+-rw-rw-r--  1 user4 user4    72 2026-09-27 04:46:35.874821718 +0530 k_choice.json
+-rw-rw-r--  1 user4 user4    70 2026-09-27 08:26:06.772289333 +0530 lce_train.json
+-rw-rw-r--  1 user4 user4   590 2026-09-27 10:01:27.266979919 +0530 loco.json
+-rw-rw-r--  1 user4 user4  4208 2026-09-27 04:20:07.113018614 +0530 manifest.json
+-rw-rw-r--  1 user4 user4   193 2026-09-27 04:35:48.687847605 +0530 nn_check_bge_test.json
+-rw-rw-r--  1 user4 user4   194 2026-09-27 04:38:18.466808842 +0530 nn_check_e5s_test.json
+-rw-rw-r--  1 user4 user4   195 2026-09-27 04:37:30.694783511 +0530 nn_check_e5_test.json
+-rw-rw-r--  1 user4 user4  1816 2026-09-27 16:33:05.121950848 +0530 oracle_analysis.json
+-rw-rw-r--  1 user4 user4  1448 2026-09-27 10:07:35.878119282 +0530 report.md
+-rw-rw-r--  1 user4 user4   271 2026-09-27 09:09:44.878342562 +0530 s2set_train.json
+-rw-rw-r--  1 user4 user4   556 2026-09-27 04:21:10.728387316 +0530 splits.json
+-rw-rw-r--  1 user4 user4  2269 2026-09-27 10:07:32.170936818 +0530 stage2_gates.json
+-rw-rw-r--  1 user4 user4  5208 2026-09-27 16:30:24.959421968 +0530 test_report.json
+-rw-rw-r--  1 user4 user4 77408 2026-09-27 10:07:32.339733845 +0530 val_errors.tsv
+-rw-rw-r--  1 user4 user4   563 2026-09-27 10:07:35.877874597 +0530 val_loss_decomposition.json

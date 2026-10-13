@@ -1,0 +1,208 @@
+{
+  "test_pred_stats": {
+    "france": {
+      "n_s1": 755,
+      "empty_rate": 0.0556,
+      "mean_pred": 3.348,
+      "dist": {
+        "0.0": 0.0556,
+        "1.0": 0.0675,
+        "2.0": 0.1748,
+        "3.0": 0.2477,
+        "4.0": 0.2265,
+        "5.0": 0.1298,
+        "6.0": 0.098
+      },
+      "pool_per_s1": 1900.653,
+      "pred_per_pool_record": 0.0018,
+      "expected_f05": 0.95268
+    },
+    "india": {
+      "n_s1": 2355,
+      "empty_rate": 0.0497,
+      "mean_pred": 3.397,
+      "dist": {
+        "0.0": 0.0497,
+        "1.0": 0.0671,
+        "2.0": 0.1652,
+        "3.0": 0.2552,
+        "4.0": 0.2293,
+        "5.0": 0.1342,
+        "6.0": 0.0994
+      },
+      "pool_per_s1": 2003.212,
+      "pred_per_pool_record": 0.0017,
+      "expected_f05": 0.9601
+    },
+    "us": {
+      "n_s1": 1890,
+      "empty_rate": 0.0492,
+      "mean_pred": 3.413,
+      "dist": {
+        "0.0": 0.0492,
+        "1.0": 0.0677,
+        "2.0": 0.1746,
+        "3.0": 0.2333,
+        "4.0": 0.2275,
+        "5.0": 0.1376,
+        "6.0": 0.1101
+      },
+      "pool_per_s1": 2019.593,
+      "pred_per_pool_record": 0.0017,
+      "expected_f05": 0.9699
+    }
+  },
+  "val_pred_stats": {
+    "india": {
+      "n_s1": 794,
+      "empty_rate": 0.0655,
+      "mean_pred": 3.262,
+      "dist": {
+        "0.0": 0.0655,
+        "1.0": 0.0844,
+        "2.0": 0.1914,
+        "3.0": 0.2141,
+        "4.0": 0.204,
+        "5.0": 0.1474,
+        "6.0": 0.0932
+      }
+    },
+    "us": {
+      "n_s1": 1206,
+      "empty_rate": 0.0481,
+      "mean_pred": 3.283,
+      "dist": {
+        "0.0": 0.0481,
+        "1.0": 0.0738,
+        "2.0": 0.1816,
+        "3.0": 0.2678,
+        "4.0": 0.2106,
+        "5.0": 0.1368,
+        "6.0": 0.0813
+      }
+    }
+  },
+  "expected_f05_test": {
+    "france": 0.95268,
+    "india": 0.9601,
+    "us": 0.9699
+  },
+  "expected_vs_actual_val": {
+    "india": {
+      "expected": 0.962,
+      "actual": 0.9609808929604043
+    },
+    "us": {
+      "expected": 0.97011,
+      "actual": 0.9693399193486429
+    }
+  },
+  "unlabelled_countries_expected_f05": {
+    "france": 0.95268
+  },
+  "labelled_countries_expected_f05_mean": 0.965,
+  "name_tokens": {
+    "france": {
+      "top_tokens": {
+        "club": 22673,
+        "france": 20793,
+        "de": 17859,
+        "ecole": 15668,
+        "amicale": 14389,
+        "comite": 13832,
+        "maison": 10839,
+        "du": 10728,
+        "centre": 10519,
+        "union": 8630,
+        "sportive": 8234,
+        "des": 7835,
+        "college": 7059,
+        "amis": 6915,
+        "primaire": 6716,
+        "federation": 6670,
+        "pharmacie": 5962,
+        "cie": 5680,
+        "sante": 5623,
+        "saint": 5611,
+        "etablissements": 5391,
+        "la": 5379,
+        "parents": 5319,
+        "ets": 5307,
+        "bordeaux": 5169
+      },
+      "legal_form_stripped_rate": 0.7044,
+      "legal_form_token_left_in_core_rate": 0.0
+    },
+    "india": {
+      "top_tokens": {
+        "private": 396421,
+        "pvt": 110859,
+        "india": 55881,
+        "services": 22351,
+        "solutions": 19677,
+        "trading": 18658,
+        "brothers": 18556,
+        "co": 17783,
+        "technologies": 15346,
+        "international": 14318,
+        "foundation": 12756,
+        "global": 12669,
+        "tech": 12085,
+        "industries": 12063,
+        "enterprises": 11220,
+        "consultants": 10993,
+        "technology": 10907,
+        "consultancy": 10784,
+        "developers": 10727,
+        "ventures": 10502,
+        "traders": 10387,
+        "marketing": 10163,
+        "care": 10122,
+        "sons": 9908,
+        "agro": 9778
+      },
+      "legal_form_stripped_rate": 0.8227,
+      "legal_form_token_left_in_core_rate": 0.0
+    },
+    "us": {
+      "top_tokens": {
+        "and": 28444,
+        "s": 24888,
+        "care": 21483,
+        "of": 18942,
+        "associates": 18360,
+        "center": 16066,
+        "partners": 14910,
+        "health": 13411,
+        "clinic": 10993,
+        "medicine": 9011,
+        "pediatric": 7900,
+        "dental": 6604,
+        "family": 6188,
+        "global": 5913,
+        "specialists": 5710,
+        "physicians": 5415,
+        "capital": 5341,
+        "dds": 5072,
+        "md": 5016,
+        "blue": 4343,
+        "regional": 4334,
+        "bright": 4131,
+        "holdings": 4126,
+        "silver": 4081,
+        "golden": 3991
+      },
+      "legal_form_stripped_rate": 0.5839,
+      "legal_form_token_left_in_core_rate": 0.0005
+    }
+  },
+  "ename_share_of_candidates": 0.44433385468505615,
+  "ename_share_of_matches": 0.021203910943574038,
+  "train_singleton_rate": 0.05584820880352326,
+  "train_mean_true": 3.4612526344456573,
+  "n_pred_pairs": 16978,
+  "n_candidate_pairs": 56264,
+  "country_shift_flags": [
+    "france: predicted matches per pool record 0.0018 vs 0.0017 (>5%, F3)"
+  ]
+}

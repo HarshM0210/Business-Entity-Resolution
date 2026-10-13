@@ -1,0 +1,11 @@
+{
+  "rows": 49750,
+  "true_in_union": 17021,
+  "true_in_s2": 16969,
+  "true_total": 17195,
+  "ename_rows": 25000,
+  "ename_true": 669,
+  "ename_true_only_via_ename": 47,
+  "s2_recall_vs_union": 0.9969449503554433,
+  "s2_recall_vs_total": 0.9868566443733644
+}

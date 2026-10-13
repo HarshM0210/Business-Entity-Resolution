@@ -1,0 +1,142 @@
+{
+  "L0_decide": {
+    "stack": 0.9871486933760572,
+    "val": 0.9877026956789942
+  },
+  "baseline_drop_arb": {
+    "stack": 0.9871486933760572,
+    "val": 0.9877026956789942
+  },
+  "tau_grid": {
+    "0.0": {
+      "stack": 0.987084,
+      "val": 0.987679,
+      "n_changed": 1311,
+      "n_up": 898,
+      "n_down": 413
+    },
+    "0.005": {
+      "stack": 0.987083,
+      "val": 0.987716,
+      "n_changed": 901,
+      "n_up": 632,
+      "n_down": 269
+    },
+    "0.01": {
+      "stack": 0.987097,
+      "val": 0.987711,
+      "n_changed": 652,
+      "n_up": 465,
+      "n_down": 187
+    },
+    "0.02": {
+      "stack": 0.987114,
+      "val": 0.987747,
+      "n_changed": 394,
+      "n_up": 289,
+      "n_down": 105
+    },
+    "0.03": {
+      "stack": 0.987122,
+      "val": 0.987739,
+      "n_changed": 251,
+      "n_up": 191,
+      "n_down": 60
+    },
+    "0.05": {
+      "stack": 0.987137,
+      "val": 0.987713,
+      "n_changed": 142,
+      "n_up": 124,
+      "n_down": 18
+    },
+    "0.08": {
+      "stack": 0.987165,
+      "val": 0.987719,
+      "n_changed": 80,
+      "n_up": 73,
+      "n_down": 7
+    },
+    "0.12": {
+      "stack": 0.987142,
+      "val": 0.987729,
+      "n_changed": 43,
+      "n_up": 41,
+      "n_down": 2
+    },
+    "0.2": {
+      "stack": 0.987141,
+      "val": 0.987729,
+      "n_changed": 21,
+      "n_up": 21,
+      "n_down": 0
+    }
+  },
+  "tau": 0.08,
+  "val_gain_vs_baseline": 1.6e-05,
+  "val_gain_vs_L0": 1.6e-05,
+  "top_features": {
+    "p_2": 187401.5,
+    "k_new": 108185.5,
+    "p_0": 75361.2,
+    "delta": 71193.7,
+    "sum_p": 14018.5,
+    "p_1": 7880.9,
+    "p_4": 5016.3,
+    "p_3": 3750.3,
+    "p_next": 2884.2,
+    "gap_k0": 2433.7,
+    "k0": 2219.8,
+    "p_at_k0": 1693.8,
+    "exp_minus_k0": 1645.9,
+    "p_5": 1189.6,
+    "ce_m_0": 781.4,
+    "ce_b_0": 774.3,
+    "p1_4": 614.1,
+    "p1_3": 592.8,
+    "ce_m_3": 555.3,
+    "ce_m_1": 547.7
+  },
+  "test": {
+    "L0_pairs": 5776799,
+    "tau": 0.08,
+    "all": {
+      "n_pairs": 5777186,
+      "changed_by_country": {
+        "france": {
+          "up": 192,
+          "down": 37
+        },
+        "india": {
+          "up": 125,
+          "down": 20
+        },
+        "us": {
+          "up": 168,
+          "down": 27
+        }
+      },
+      "validator_rc": 0,
+      "validator_tail": "ML Challenge 2026 \u2014 submission validator\n  test dir: /scratch/user4/dai/model-5/work/test_tsv\n  required S1 entities: 1732544\n  valid S2/S3 match IDs: 9969589\n  matching_results.tsv: 1732544 rows (100277 empty, 1632267 non-empty).\n  candidate_pairs.tsv: 1732544 rows (0 empty, 1732544 non-empty).\n\nPASS \u2014 no blocking issues found. Safe to submit.\n"
+    },
+    "no_france": {
+      "n_pairs": 5777033,
+      "changed_by_country": {
+        "france": {
+          "up": 0,
+          "down": 0
+        },
+        "india": {
+          "up": 125,
+          "down": 20
+        },
+        "us": {
+          "up": 168,
+          "down": 27
+        }
+      },
+      "validator_rc": 0,
+      "validator_tail": "ML Challenge 2026 \u2014 submission validator\n  test dir: /scratch/user4/dai/model-5/work/test_tsv\n  required S1 entities: 1732544\n  valid S2/S3 match IDs: 9969589\n  matching_results.tsv: 1732544 rows (100295 empty, 1632249 non-empty).\n  candidate_pairs.tsv: 1732544 rows (0 empty, 1732544 non-empty).\n\nPASS \u2014 no blocking issues found. Safe to submit.\n"
+    }
+  }
+}

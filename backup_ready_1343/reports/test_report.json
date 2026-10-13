@@ -1,0 +1,211 @@
+{
+  "test_pred_stats": {
+    "france": {
+      "n_s1": 259452,
+      "empty_rate": 0.0583,
+      "mean_pred": 3.198,
+      "dist": {
+        "0.0": 0.0583,
+        "1.0": 0.0783,
+        "2.0": 0.1985,
+        "3.0": 0.2532,
+        "4.0": 0.2071,
+        "5.0": 0.1241,
+        "6.0": 0.0805
+      },
+      "pool_per_s1": 5.531,
+      "pred_per_pool_record": 0.5782,
+      "expected_f05": 0.97272
+    },
+    "india": {
+      "n_s1": 809986,
+      "empty_rate": 0.0584,
+      "mean_pred": 3.337,
+      "dist": {
+        "0.0": 0.0584,
+        "1.0": 0.0653,
+        "2.0": 0.183,
+        "3.0": 0.2445,
+        "4.0": 0.2134,
+        "5.0": 0.1367,
+        "6.0": 0.0987
+      },
+      "pool_per_s1": 5.824,
+      "pred_per_pool_record": 0.5729,
+      "expected_f05": 0.99045
+    },
+    "us": {
+      "n_s1": 663106,
+      "empty_rate": 0.0574,
+      "mean_pred": 3.364,
+      "dist": {
+        "0.0": 0.0574,
+        "1.0": 0.0616,
+        "2.0": 0.1806,
+        "3.0": 0.2459,
+        "4.0": 0.2146,
+        "5.0": 0.1383,
+        "6.0": 0.1015
+      },
+      "pool_per_s1": 5.756,
+      "pred_per_pool_record": 0.5844,
+      "expected_f05": 0.98998
+    }
+  },
+  "val_pred_stats": {
+    "india": {
+      "n_s1": 40206,
+      "empty_rate": 0.0583,
+      "mean_pred": 3.351,
+      "dist": {
+        "0.0": 0.0583,
+        "1.0": 0.063,
+        "2.0": 0.182,
+        "3.0": 0.2458,
+        "4.0": 0.2124,
+        "5.0": 0.1376,
+        "6.0": 0.1009
+      }
+    },
+    "us": {
+      "n_s1": 59794,
+      "empty_rate": 0.0574,
+      "mean_pred": 3.34,
+      "dist": {
+        "0.0": 0.0574,
+        "1.0": 0.0632,
+        "2.0": 0.1823,
+        "3.0": 0.2491,
+        "4.0": 0.2126,
+        "5.0": 0.1391,
+        "6.0": 0.0962
+      }
+    }
+  },
+  "expected_f05_test": {
+    "france": 0.97272,
+    "india": 0.99045,
+    "us": 0.98998
+  },
+  "expected_vs_actual_val": {
+    "india": {
+      "expected": 0.99083,
+      "actual": 0.9872819915698673
+    },
+    "us": {
+      "expected": 0.98878,
+      "actual": 0.9874676146346176
+    }
+  },
+  "unlabelled_countries_expected_f05": {
+    "france": 0.97272
+  },
+  "labelled_countries_expected_f05_mean": 0.9902150000000001,
+  "name_tokens": {
+    "france": {
+      "top_tokens": {
+        "club": 22673,
+        "france": 20793,
+        "de": 17859,
+        "ecole": 15668,
+        "amicale": 14389,
+        "comite": 13832,
+        "maison": 10839,
+        "du": 10728,
+        "centre": 10519,
+        "union": 8630,
+        "sportive": 8234,
+        "des": 7835,
+        "college": 7059,
+        "amis": 6915,
+        "primaire": 6716,
+        "federation": 6670,
+        "pharmacie": 5962,
+        "cie": 5680,
+        "sante": 5623,
+        "saint": 5611,
+        "etablissements": 5391,
+        "la": 5379,
+        "parents": 5319,
+        "ets": 5307,
+        "bordeaux": 5169
+      },
+      "legal_form_stripped_rate": 0.7044,
+      "legal_form_token_left_in_core_rate": 0.0
+    },
+    "india": {
+      "top_tokens": {
+        "private": 396421,
+        "pvt": 110859,
+        "india": 55881,
+        "services": 22351,
+        "solutions": 19677,
+        "trading": 18658,
+        "brothers": 18556,
+        "co": 17783,
+        "technologies": 15346,
+        "international": 14318,
+        "foundation": 12756,
+        "global": 12669,
+        "tech": 12085,
+        "industries": 12063,
+        "enterprises": 11220,
+        "consultants": 10993,
+        "technology": 10907,
+        "consultancy": 10784,
+        "developers": 10727,
+        "ventures": 10502,
+        "traders": 10387,
+        "marketing": 10163,
+        "care": 10122,
+        "sons": 9908,
+        "agro": 9778
+      },
+      "legal_form_stripped_rate": 0.8227,
+      "legal_form_token_left_in_core_rate": 0.0
+    },
+    "us": {
+      "top_tokens": {
+        "and": 28444,
+        "s": 24888,
+        "care": 21483,
+        "of": 18942,
+        "associates": 18360,
+        "center": 16066,
+        "partners": 14910,
+        "health": 13411,
+        "clinic": 10993,
+        "medicine": 9011,
+        "pediatric": 7900,
+        "dental": 6604,
+        "family": 6188,
+        "global": 5913,
+        "specialists": 5710,
+        "physicians": 5415,
+        "capital": 5341,
+        "dds": 5072,
+        "md": 5016,
+        "blue": 4343,
+        "regional": 4334,
+        "bright": 4131,
+        "holdings": 4126,
+        "silver": 4081,
+        "golden": 3991
+      },
+      "legal_form_stripped_rate": 0.5839,
+      "legal_form_token_left_in_core_rate": 0.0005
+    }
+  },
+  "ename_share_of_candidates": 0.4915049394069943,
+  "ename_share_of_matches": 0.02290150638035475,
+  "train_singleton_rate": 0.05584820880352326,
+  "train_mean_true": 3.4612526344456573,
+  "n_pred_pairs": 5763551,
+  "n_candidate_pairs": 17624889,
+  "country_shift_flags": [],
+  "validator": {
+    "returncode": 0,
+    "stdout": "ML Challenge 2026 \u2014 submission validator\n  test dir: /scratch/user4/dai/model-5/work/test_tsv\n  required S1 entities: 1732544\n  valid S2/S3 match IDs: 9969589\n  matching_results.tsv: 1732544 rows (100516 empty, 1632028 non-empty).\n  candidate_pairs.tsv: 1732544 rows (0 empty, 1732544 non-empty).\n\nPASS \u2014 no blocking issues found. Safe to submit.\n",
+    "stderr": ""
+  }
+}

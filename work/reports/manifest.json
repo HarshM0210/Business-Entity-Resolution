@@ -1,0 +1,186 @@
+{
+  "train_s1": {
+    "rows": 2206821,
+    "dup_ids": 0,
+    "prefix_ok": true,
+    "countries": {
+      "US": 1323633,
+      "India": 883188
+    },
+    "empty_name": 0,
+    "empty_addr": 0,
+    "emb": {
+      "e5": {
+        "rows": 2206821,
+        "dim": 1024,
+        "sampled": 51950,
+        "norm_min": 0.999755859375,
+        "norm_max": 1.000472068786621,
+        "norm_bad": 0
+      },
+      "bge": {
+        "rows": 2206821,
+        "dim": 1024,
+        "sampled": 51959,
+        "norm_min": 0.9997552037239075,
+        "norm_max": 1.0002455711364746,
+        "norm_bad": 0,
+        "id_mismatch": 0
+      },
+      "e5s": {
+        "rows": 2206821,
+        "dim": 384,
+        "sampled": 51949,
+        "norm_min": 0.9997557997703552,
+        "norm_max": 1.0004913806915283,
+        "norm_bad": 0,
+        "id_mismatch": 0
+      }
+    }
+  },
+  "train_pool": {
+    "rows": 10320219,
+    "dup_ids": 0,
+    "prefix_ok": true,
+    "countries": {
+      "US": 6186873,
+      "India": 4133346
+    },
+    "empty_name": 0,
+    "empty_addr": 344883,
+    "emb": {
+      "e5": {
+        "rows": 10320219,
+        "dim": 1024,
+        "sampled": 51990,
+        "norm_min": 0.9997557997703552,
+        "norm_max": 1.000474214553833,
+        "norm_bad": 0
+      },
+      "bge": {
+        "rows": 10320219,
+        "dim": 1024,
+        "sampled": 51991,
+        "norm_min": 0.9997551441192627,
+        "norm_max": 1.0002447366714478,
+        "norm_bad": 0,
+        "id_mismatch": 0
+      },
+      "e5s": {
+        "rows": 10320219,
+        "dim": 384,
+        "sampled": 51990,
+        "norm_min": 0.9997559189796448,
+        "norm_max": 1.0004897117614746,
+        "norm_bad": 0,
+        "id_mismatch": 0
+      }
+    }
+  },
+  "test_s1": {
+    "rows": 1732544,
+    "dup_ids": 0,
+    "prefix_ok": true,
+    "countries": {
+      "India": 809986,
+      "US": 663106,
+      "France": 259452
+    },
+    "empty_name": 0,
+    "empty_addr": 0,
+    "emb": {
+      "e5": {
+        "rows": 1732544,
+        "dim": 1024,
+        "sampled": 51945,
+        "norm_min": 0.999755859375,
+        "norm_max": 1.0004709959030151,
+        "norm_bad": 0
+      },
+      "bge": {
+        "rows": 1732544,
+        "dim": 1024,
+        "sampled": 51945,
+        "norm_min": 0.9997550845146179,
+        "norm_max": 1.0002460479736328,
+        "norm_bad": 0,
+        "id_mismatch": 0
+      },
+      "e5s": {
+        "rows": 1732544,
+        "dim": 384,
+        "sampled": 51937,
+        "norm_min": 0.9997557997703552,
+        "norm_max": 1.0004923343658447,
+        "norm_bad": 0,
+        "id_mismatch": 0
+      }
+    }
+  },
+  "test_pool": {
+    "rows": 9969589,
+    "dup_ids": 0,
+    "prefix_ok": true,
+    "countries": {
+      "India": 4717565,
+      "US": 3817031,
+      "France": 1434993
+    },
+    "empty_name": 0,
+    "empty_addr": 265506,
+    "emb": {
+      "e5": {
+        "rows": 9969589,
+        "dim": 1024,
+        "sampled": 51993,
+        "norm_min": 0.999755859375,
+        "norm_max": 1.0004667043685913,
+        "norm_bad": 0
+      },
+      "bge": {
+        "rows": 9969589,
+        "dim": 1024,
+        "sampled": 51992,
+        "norm_min": 0.999754786491394,
+        "norm_max": 1.000244140625,
+        "norm_bad": 0,
+        "id_mismatch": 0
+      },
+      "e5s": {
+        "rows": 9969589,
+        "dim": 384,
+        "sampled": 51996,
+        "norm_min": 0.9997557997703552,
+        "norm_max": 1.0004914999008179,
+        "norm_bad": 0,
+        "id_mismatch": 0
+      }
+    }
+  },
+  "ground_truth": {
+    "rows": 2206821,
+    "s1_covered": 2206821,
+    "n_matched": 7638365,
+    "unknown_ids": 0,
+    "multi_owner": 0,
+    "e5_alignment": {
+      "cos_true": 0.9231407046318054,
+      "cos_random": 0.7844998240470886,
+      "frac_true_beats_s1_shift": 0.99995,
+      "frac_true_beats_pool_shift": 1.0
+    },
+    "bge_alignment": {
+      "cos_true": 0.8498418927192688,
+      "cos_random": 0.4181397557258606,
+      "frac_true_beats_s1_shift": 0.99995,
+      "frac_true_beats_pool_shift": 0.9999
+    },
+    "e5s_alignment": {
+      "cos_true": 0.9524320363998413,
+      "cos_random": 0.7880826592445374,
+      "frac_true_beats_s1_shift": 1.0,
+      "frac_true_beats_pool_shift": 0.99995
+    }
+  },
+  "problems": []
+}

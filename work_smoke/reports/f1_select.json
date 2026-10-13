@@ -1,0 +1,31 @@
+{
+  "choice": "full",
+  "scores": {
+    "full": {
+      "in_country": 0.9389445028560357,
+      "out_of_country": 0.8391374400688996
+    },
+    "invariant": {
+      "in_country": 0.9353301795660638,
+      "out_of_country": 0.8343014005144584
+    }
+  },
+  "detail": {
+    "full: train india": {
+      "india": 0.9293702852528894,
+      "us": 0.8744902654896388
+    },
+    "full: train us": {
+      "india": 0.8037846146481603,
+      "us": 0.9485187204591818
+    },
+    "invariant: train india": {
+      "india": 0.9233574962447615,
+      "us": 0.8699154942656967
+    },
+    "invariant: train us": {
+      "india": 0.7986873067632201,
+      "us": 0.9473028628873662
+    }
+  }
+}

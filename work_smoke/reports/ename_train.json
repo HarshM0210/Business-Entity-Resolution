@@ -1,0 +1,20 @@
+{
+  "india": {
+    "queries": 4029,
+    "empty_address_docs": 122794,
+    "pairs": 20145,
+    "pairs_per_s1": 5.0
+  },
+  "us": {
+    "queries": 5971,
+    "empty_address_docs": 222089,
+    "pairs": 29855,
+    "pairs_per_s1": 5.0
+  },
+  "recall": {
+    "true_found": 669,
+    "true_not_in_fused_topK": 47,
+    "true_total_stack_val": 17195,
+    "precision": 0.02676
+  }
+}

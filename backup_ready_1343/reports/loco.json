@@ -1,0 +1,19 @@
+{
+  "s2noce: train india": {
+    "india": 0.9715512664481503,
+    "us": 0.9783141510298616
+  },
+  "s2noce: train us": {
+    "india": 0.9702933602719235,
+    "us": 0.9797805307491574
+  },
+  "s2ce: train india": {
+    "india": 0.9867473184601008,
+    "us": 0.9860280860404174
+  },
+  "s2ce: train us": {
+    "india": 0.9853494840430426,
+    "us": 0.9868776046308685
+  },
+  "note": "train country -> F0.5 on each country val. ALL rows are upper bounds: noce uses stage-1 p1 and ce the cross-encoders, both trained on both countries (README v2 2.6). Leak-free transfer: reports/f1_select.json"
+}

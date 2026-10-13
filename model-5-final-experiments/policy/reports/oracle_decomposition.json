@@ -1,0 +1,239 @@
+{
+  "unavailable_from_val_loss_decomposition_ce": {
+    "val_f05": 0.9873929830252042,
+    "f05_lost_by_bucket": {
+      "rejected_in_stage2": 0.0072,
+      "dropped_before_stage2": 0.00021,
+      "never_retrieved": 0.00317,
+      "fp_distractor": 0.00081,
+      "fp_owner_scored": 0.00012,
+      "fp_owner_not_scored": 0.00126
+    },
+    "pairs_by_bucket": {
+      "rejected_in_stage2": 8340,
+      "dropped_before_stage2": 204,
+      "never_retrieved": 3439,
+      "fp_distractor": 270,
+      "fp_owner_scored": 48,
+      "fp_owner_not_scored": 450
+    },
+    "note": "fp_owner_not_scored is handled by test-time arbitration; not available gain"
+  },
+  "configs": {
+    "ce_s": {
+      "family": "expf05",
+      "thr": 0.0,
+      "levels": {
+        "L0_current": {
+          "stack": 0.987149,
+          "val": 0.987703,
+          "stack_by_country": {
+            "india": 0.986535,
+            "us": 0.987557
+          },
+          "val_by_country": {
+            "india": 0.987705,
+            "us": 0.987701
+          },
+          "n_pairs": 1004056
+        },
+        "L1_oraclek_arb_p": {
+          "stack": 0.9953,
+          "val": 0.995434,
+          "stack_by_country": {
+            "india": 0.993932,
+            "us": 0.99621
+          },
+          "val_by_country": {
+            "india": 0.994389,
+            "us": 0.996136
+          },
+          "n_pairs": 1022152
+        },
+        "L2_oraclek_arb_truth": {
+          "stack": 0.995305,
+          "val": 0.995437,
+          "stack_by_country": {
+            "india": 0.993944,
+            "us": 0.99621
+          },
+          "val_by_country": {
+            "india": 0.994389,
+            "us": 0.996141
+          },
+          "n_pairs": 1022152
+        },
+        "L3_perfect_scorer": {
+          "stack": 0.996717,
+          "val": 0.996811,
+          "stack_by_country": {
+            "india": 0.995091,
+            "us": 0.997798
+          },
+          "val_by_country": {
+            "india": 0.995444,
+            "us": 0.997731
+          },
+          "n_pairs": 1026904
+        }
+      },
+      "gaps": {
+        "stack": {
+          "k_policy_L1-L0": 0.008151,
+          "arbitration_L2-L1": 5e-06,
+          "ranking_L3-L2": 0.001412
+        },
+        "val": {
+          "k_policy_L1-L0": 0.007731,
+          "arbitration_L2-L1": 3e-06,
+          "ranking_L3-L2": 0.001374
+        }
+      },
+      "gaps_by_country_stack": {
+        "india": {
+          "k_policy": 0.007397,
+          "ranking": 0.001147
+        },
+        "us": {
+          "k_policy": 0.008653,
+          "ranking": 0.001588
+        }
+      },
+      "k_disagreement": {
+        "n_s1": 300000,
+        "oracle_more": 19008,
+        "oracle_fewer": 2100,
+        "same": 278892,
+        "oracle_more_by_country": {
+          "india": 6633,
+          "us": 12375
+        },
+        "oracle_fewer_by_country": {
+          "india": 881,
+          "us": 1219
+        }
+      },
+      "calibration": {
+        "stack": {
+          "india": {
+            "expected": 0.991233,
+            "actual": 0.986535
+          },
+          "us": {
+            "expected": 0.98938,
+            "actual": 0.987557
+          }
+        },
+        "val": {
+          "india": {
+            "expected": 0.991125,
+            "actual": 0.987705
+          },
+          "us": {
+            "expected": 0.989075,
+            "actual": 0.987701
+          }
+        }
+      }
+    },
+    "ce": {
+      "family": "expf05",
+      "thr": 0.0,
+      "levels": {
+        "L0_current": {
+          "stack": 0.986873,
+          "val": 0.987393,
+          "stack_by_country": {
+            "india": 0.986227,
+            "us": 0.987302
+          },
+          "val_by_country": {
+            "india": 0.987282,
+            "us": 0.987468
+          },
+          "n_pairs": 1004311
+        },
+        "L1_oraclek_arb_p": {
+          "stack": 0.995249,
+          "val": 0.995414,
+          "stack_by_country": {
+            "india": 0.993877,
+            "us": 0.99616
+          },
+          "val_by_country": {
+            "india": 0.994317,
+            "us": 0.996151
+          },
+          "n_pairs": 1022049
+        },
+        "L2_oraclek_arb_truth": {
+          "stack": 0.995252,
+          "val": 0.995417,
+          "stack_by_country": {
+            "india": 0.993884,
+            "us": 0.996161
+          },
+          "val_by_country": {
+            "india": 0.994317,
+            "us": 0.996156
+          },
+          "n_pairs": 1022049
+        },
+        "L3_perfect_scorer": {
+          "stack": 0.996717,
+          "val": 0.996811,
+          "stack_by_country": {
+            "india": 0.995091,
+            "us": 0.997798
+          },
+          "val_by_country": {
+            "india": 0.995444,
+            "us": 0.997731
+          },
+          "n_pairs": 1026904
+        }
+      },
+      "gaps": {
+        "stack": {
+          "k_policy_L1-L0": 0.008376,
+          "arbitration_L2-L1": 3e-06,
+          "ranking_L3-L2": 0.001465
+        },
+        "val": {
+          "k_policy_L1-L0": 0.008021,
+          "arbitration_L2-L1": 3e-06,
+          "ranking_L3-L2": 0.001394
+        }
+      },
+      "gaps_by_country_stack": {
+        "india": {
+          "k_policy": 0.00765,
+          "ranking": 0.001207
+        },
+        "us": {
+          "k_policy": 0.008858,
+          "ranking": 0.001637
+        }
+      },
+      "k_disagreement": {
+        "n_s1": 300000,
+        "oracle_more": 18929,
+        "oracle_fewer": 2351,
+        "same": 278720,
+        "oracle_more_by_country": {
+          "india": 6541,
+          "us": 12388
+        },
+        "oracle_fewer_by_country": {
+          "india": 1001,
+          "us": 1350
+        }
+      }
+    }
+  },
+  "decision": {
+    "k_policy_headroom_stack": 0.008151,
+    "threshold": 0.001,
+    "verdict": "build k-policy"
+  }
+}

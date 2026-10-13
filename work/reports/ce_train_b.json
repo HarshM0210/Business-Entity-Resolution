@@ -1,0 +1,6 @@
+{
+  "dev_auc": 0.9995313506232799,
+  "steps": 14063,
+  "n_train": 900000,
+  "model": "BAAI/bge-reranker-v2-m3"
+}

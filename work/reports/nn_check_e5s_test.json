@@ -1,0 +1,9 @@
+{
+  "top1_shares_name_word": 0.9684,
+  "random_shares_name_word": 0.04368,
+  "by_country": {
+    "france": 0.9893645307099176,
+    "india": 0.9446459412780657,
+    "us": 0.9887151879076509
+  }
+}

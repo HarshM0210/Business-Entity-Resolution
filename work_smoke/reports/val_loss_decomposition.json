@@ -1,0 +1,20 @@
+{
+  "val_f05": 0.9660213858725124,
+  "f05_lost_by_bucket": {
+    "rejected_in_stage2": 0.01235,
+    "dropped_before_stage2": 0.0013,
+    "never_retrieved": 0.00522,
+    "fp_distractor": 0.00955,
+    "fp_owner_scored": 0.0,
+    "fp_owner_not_scored": 0.00587
+  },
+  "pairs_by_bucket": {
+    "rejected_in_stage2": 294,
+    "dropped_before_stage2": 26,
+    "never_retrieved": 80,
+    "fp_distractor": 62,
+    "fp_owner_scored": 0,
+    "fp_owner_not_scored": 38
+  },
+  "note": "fp_owner_not_scored is handled by test-time arbitration; not available gain"
+}

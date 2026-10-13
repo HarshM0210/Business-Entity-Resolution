@@ -1,0 +1,32 @@
+{
+  "ce_monly": {
+    "stack": 0.9864434320159712,
+    "family": "expf05",
+    "thr": 0.03651,
+    "val_claims": 0.9871659730254364,
+    "val_plain": 0.9871041431100878,
+    "all_families": {
+      "expf05|0.0": 0.986440209579308,
+      "expf05|0.03651": 0.9864434320159712
+    }
+  },
+  "ce_both": {
+    "stack": 0.9868725196284821,
+    "family": "expf05",
+    "thr": 0.0,
+    "val_claims": 0.9873929830252042,
+    "val_plain": 0.9873092268011118,
+    "all_families": {
+      "expf05|0.0": 0.9868725196284821,
+      "expf05|0.03651": 0.9868706336605074
+    }
+  },
+  "bge_reranker_gain_stack": 0.00042908761251092553,
+  "bge_reranker_gain_val": 0.0002270099997677688,
+  "dropped_columns": [
+    "ce_b",
+    "ce_b_gap",
+    "ce_b_rank",
+    "ce_mean_qz"
+  ]
+}

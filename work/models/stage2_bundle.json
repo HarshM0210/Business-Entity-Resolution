@@ -1,0 +1,240 @@
+{
+  "config": "ce",
+  "family": "expf05",
+  "thr": 0.0,
+  "features": [
+    "p1",
+    "p1_rank",
+    "p1_gap",
+    "rrf",
+    "rrf_rank",
+    "support",
+    "e5_r",
+    "e5_s",
+    "e5_gap",
+    "bge_r",
+    "bge_s",
+    "bge_gap",
+    "e5s_r",
+    "e5s_s",
+    "e5s_gap",
+    "lex_r",
+    "lex_s",
+    "lex_gap",
+    "e5_cos",
+    "tri_max_cos",
+    "tri_n_close",
+    "bge_cos",
+    "e5s_cos",
+    "n_ratio",
+    "n_jw",
+    "n_lev",
+    "n_tsort",
+    "n_tset",
+    "n_partial",
+    "n_full_ratio",
+    "ns_ratio",
+    "ns_partial",
+    "a_ratio",
+    "a_tset",
+    "a_partial",
+    "st_ratio",
+    "st_ns_ratio",
+    "n_soft_ab",
+    "n_soft_ba",
+    "n_jacc",
+    "n_extra_a",
+    "n_extra_b",
+    "n_contain",
+    "n_acro",
+    "n_first_eq",
+    "legal_state",
+    "st_soft_ab",
+    "st_soft_ba",
+    "loc_cov_a",
+    "loc_cov_b",
+    "a_jacc",
+    "house_state",
+    "house_diff",
+    "num_jacc",
+    "num_state",
+    "postal_state",
+    "alnum_state",
+    "n_tok_a",
+    "n_tok_b",
+    "a_tok_a",
+    "a_tok_b",
+    "nonlatin_a",
+    "nonlatin_b",
+    "addr_empty_a",
+    "addr_empty_b",
+    "cand_src",
+    "ename_only",
+    "ename_s",
+    "ename_r",
+    "from_ename",
+    "q_ncand",
+    "e5_cos_gap",
+    "q_best_e5",
+    "e5_cos_rank",
+    "e5_cos_qz",
+    "e5_cos_cz",
+    "q_best_e5_cz",
+    "bge_cos_gap",
+    "q_best_bge",
+    "bge_cos_rank",
+    "bge_cos_qz",
+    "bge_cos_cz",
+    "q_best_bge_cz",
+    "e5s_cos_gap",
+    "q_best_e5s",
+    "e5s_cos_rank",
+    "e5s_cos_qz",
+    "e5s_cos_cz",
+    "q_best_e5s_cz",
+    "lex_rel",
+    "q_best_n_tset",
+    "n_tset_gap",
+    "tok_ratio_n",
+    "tok_ratio_a",
+    "x_empty",
+    "x_name_eq",
+    "x_name_ns_eq",
+    "x_n_s1_cand_name",
+    "x_n_s1_cand_name_ns",
+    "x_n_s1_own_name",
+    "ce_m",
+    "ce_m_rank",
+    "ce_m_gap",
+    "ce_b",
+    "ce_b_rank",
+    "ce_b_gap",
+    "ce_mean_qz"
+  ],
+  "miss_rate": 0.03651,
+  "stack_f05": 0.9868725196284821,
+  "val_f05": 0.9873929830252042,
+  "val_f05_plain": 0.9873092268011118,
+  "val_f05_by_country": {
+    "india": 0.9872819915698673,
+    "us": 0.9874676146346176
+  },
+  "val_pred_stats": {
+    "india": {
+      "n_s1": 40206,
+      "empty_rate": 0.0583,
+      "mean_pred": 3.351,
+      "dist": {
+        "0.0": 0.0583,
+        "1.0": 0.063,
+        "2.0": 0.182,
+        "3.0": 0.2458,
+        "4.0": 0.2124,
+        "5.0": 0.1376,
+        "6.0": 0.1009
+      }
+    },
+    "us": {
+      "n_s1": 59794,
+      "empty_rate": 0.0574,
+      "mean_pred": 3.34,
+      "dist": {
+        "0.0": 0.0574,
+        "1.0": 0.0632,
+        "2.0": 0.1823,
+        "3.0": 0.2491,
+        "4.0": 0.2126,
+        "5.0": 0.1391,
+        "6.0": 0.0962
+      }
+    }
+  },
+  "ladder": {
+    "noce": {
+      "stack": 0.9763833967886719,
+      "family": "expf05",
+      "thr": 0.0,
+      "val_claims": 0.9776694066535916,
+      "val_plain": 0.9775362338143376,
+      "all_families": {
+        "expf05|0.0": 0.9763833967886719,
+        "expf05|0.03651": 0.9763796889085821
+      }
+    },
+    "ce_nox": {
+      "stack": 0.9840266242910162,
+      "family": "expf05",
+      "thr": 0.0,
+      "val_claims": 0.9844675260780948,
+      "val_plain": 0.9843078333738193,
+      "all_families": {
+        "expf05|0.0": 0.9840266242910162,
+        "expf05|0.03651": 0.9839747045811763
+      }
+    },
+    "ce": {
+      "stack": 0.9868725196284821,
+      "family": "expf05",
+      "thr": 0.0,
+      "val_claims": 0.9873929830252042,
+      "val_plain": 0.9873092268011118,
+      "all_families": {
+        "expf05|0.0": 0.9868725196284821,
+        "expf05|0.03651": 0.9868706336605074
+      }
+    },
+    "ce_s": {
+      "stack": 0.9871486933760572,
+      "family": "expf05",
+      "thr": 0.0,
+      "val_claims": 0.9877026956789942,
+      "val_plain": 0.9876583768622494,
+      "all_families": {
+        "expf05|0.0": 0.9871486933760572,
+        "expf05|0.03651": 0.9871449513655934
+      }
+    },
+    "ce_lce:ce": {
+      "stack": 0.9876719836813437,
+      "family": "expf05",
+      "thr": 0.0,
+      "val_claims": 0.9879379081559377,
+      "val_plain": 0.9878770254442815,
+      "all_families": {
+        "expf05|0.0": 0.9876719836813437,
+        "expf05|0.03651": 0.9876625374090139
+      }
+    },
+    "lce_only": {
+      "stack": 0.9815312821373561,
+      "family": "expf05",
+      "thr": 0.0,
+      "val_claims": 0.98161005142188,
+      "val_plain": 0.9813458434768386,
+      "all_families": {
+        "expf05|0.0": 0.9815312821373561
+      }
+    }
+  },
+  "beats_v2_line": {
+    "stack": 0.9868725196284821,
+    "v2_stack_oof": 0.98543,
+    "switch_rule_passes": true
+  },
+  "val_expected_vs_actual_by_country": {
+    "india": {
+      "expected": 0.99083,
+      "actual": 0.9872819915698673
+    },
+    "us": {
+      "expected": 0.98878,
+      "actual": 0.9874676146346176
+    }
+  },
+  "count_subsample_test": {
+    "val_plain_full_table": 0.9873092268011118,
+    "val_plain_260k_table": 0.9824879387483545,
+    "delta": -0.004821288052757278,
+    "flag": true
+  }
+}

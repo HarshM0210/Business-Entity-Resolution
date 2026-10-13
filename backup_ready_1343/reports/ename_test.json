@@ -1,0 +1,20 @@
+{
+  "france": {
+    "queries": 259452,
+    "empty_address_docs": 43078,
+    "pairs": 1297260,
+    "pairs_per_s1": 5.0
+  },
+  "india": {
+    "queries": 809986,
+    "empty_address_docs": 112004,
+    "pairs": 4049930,
+    "pairs_per_s1": 5.0
+  },
+  "us": {
+    "queries": 663106,
+    "empty_address_docs": 110424,
+    "pairs": 3315530,
+    "pairs_per_s1": 5.0
+  }
+}

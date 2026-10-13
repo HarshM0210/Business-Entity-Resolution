@@ -1,0 +1,130 @@
+MODEL-5 FINAL EXPERIMENTS - QUICKSTART GUIDE
+==============================================
+
+Created: 2026-09-27 16:05
+Time Available: 6 hours
+Expected Runtime: 40 minutes (fast) or 2-3 hours (full)
+
+
+FASTEST OPTION (40 minutes):
+============================
+cd /scratch/user4/dai/model-5/model-5-final-experiments
+source /scratch/user4/dai/bge-out/.venv/bin/activate  # or use model-4 venv
+python run_experiments.py --skip-count-norm
+
+This runs:
+- Experiment 1: ce_s submission (10 min) → output_ce_s/
+- Experiment 2: Oracle analysis (30 min) → work/reports/oracle_analysis.json
+
+Results in: ~40 minutes
+Submissions: 1 (ce_s)
+Training: None (uses existing models)
+
+
+FULL OPTION (2-3 hours):
+========================
+cd /scratch/user4/dai/model-5/model-5-final-experiments
+python run_experiments.py
+
+This runs:
+- Experiment 1: ce_s submission (10 min)
+- Experiment 2: Oracle analysis (30 min)
+- Experiment 3: Count normalization (1-2 hours)
+
+Results in: 2-3 hours
+Submissions: 2 (ce_s, count_norm if safe)
+Training: Stage-2 only with normalized features
+
+
+INDIVIDUAL EXPERIMENTS:
+======================
+python exp1_ce_s_submission.py           # 10 min
+python exp2_oracle_analysis.py           # 30 min
+python exp3_count_normalization.py       # 1-2 hr
+
+
+WHAT EACH DOES:
+==============
+
+1. ce_s Submission (FASTEST WIN)
+   - Uses existing trained models (s2_ce_s_*.txt)
+   - Stack: 0.98715 (+0.00028 vs baseline)
+   - Val: 0.98770 (+0.00031 vs baseline)
+   - Output: output_ce_s/matching_results.tsv
+   - Risk: ZERO (models already validated)
+
+2. Oracle Analysis (STRATEGIC)
+   - Computes theoretical upper bound
+   - Uses existing OOF predictions
+   - Determines if Transformer is worth it
+   - Threshold: >= 0.001 gain = proceed
+   - Output: work/reports/oracle_analysis.json
+   - Risk: ZERO (read-only analysis)
+
+3. Count Normalization (FRANCE FIX)
+   - Normalizes count features by table size
+   - Fixes known France size-dependence
+   - Retrains stage-2 only (no CE retraining)
+   - Safety check: skips if val degrades
+   - Output: output_count_norm/matching_results.tsv (if safe)
+   - Risk: LOW (stage-2 training only, validated)
+
+
+RECOMMENDED APPROACH:
+====================
+
+1. Run fast experiments first (40 min):
+   → python run_fast_experiments.py
+
+2. Review results:
+   → cat work/reports/oracle_analysis.json
+   → ls -lh output_ce_s/*.tsv
+
+3. If time remains and oracle says skip Transformer:
+   → python exp3_count_normalization.py
+
+4. Upload best submission:
+   → output_ce_s/ (immediate alternative)
+   → output_count_norm/ (if generated and safe)
+
+
+OUTPUT LOCATIONS:
+================
+- Submissions: output_ce_s/, output_count_norm/
+- Reports: work/reports/oracle_analysis.json
+           work/reports/count_normalization.json
+- Logs: (printed to console, not saved)
+
+
+VALIDATION:
+==========
+All submissions automatically validated with --check-ids.
+Check work/reports/test_report.json for details.
+
+
+TROUBLESHOOTING:
+===============
+- Python not found? Use: /scratch/user4/dai/model-4/.venv/bin/python
+- Out of memory? Close other processes, experiments need ~32GB RAM
+- ce_s models missing? They should exist at work/models/s2_ce_s_*.txt
+- Validation fails? Check work/reports/test_report.json["validator"]
+
+
+EXPECTED RESULTS:
+================
+After fast track (40 min):
+- 1 new submission (ce_s)
+- Oracle recommendation on Transformer
+- Decision point for count normalization
+
+After full run (2-3 hr):
+- 2 new submissions (ce_s, count_norm if safe)
+- Complete oracle analysis
+- France size-dependence addressed
+
+
+QUESTIONS?
+=========
+See EXPERIMENTS.md for detailed documentation.
+All original files are backed up and never modified.
+Original output/ directory is untouched.

@@ -1,0 +1,91 @@
+{
+  "configs": {
+    "noce": {
+      "stack": 0.9506170552986132,
+      "family": "expf05",
+      "thr": 0.0,
+      "val_claims": 0.9549305828253889,
+      "val_plain": 0.9549305828253889,
+      "all_families": {
+        "expf05|0.0": 0.9506170552986132,
+        "expf05|0.04": 0.9504933084314459
+      }
+    },
+    "ce_nox": {
+      "stack": 0.9595404128488386,
+      "family": "expf05",
+      "thr": 0.0,
+      "val_claims": 0.9608121967090569,
+      "val_plain": 0.9608121967090569,
+      "all_families": {
+        "expf05|0.0": 0.9595404128488386,
+        "expf05|0.04": 0.9595056283231121
+      }
+    },
+    "ce": {
+      "stack": 0.9627813011622515,
+      "family": "expf05",
+      "thr": 0.04,
+      "val_claims": 0.9643579017252885,
+      "val_plain": 0.9643579017252885,
+      "all_families": {
+        "expf05|0.0": 0.9627604678289181,
+        "expf05|0.04": 0.9627813011622515
+      }
+    },
+    "ce_s": {
+      "stack": 0.9661036249841543,
+      "family": "expf05",
+      "thr": 0.04,
+      "val_claims": 0.9660213858725124,
+      "val_plain": 0.9660213858725124,
+      "all_families": {
+        "expf05|0.0": 0.9660573726254015,
+        "expf05|0.04": 0.9661036249841543
+      }
+    },
+    "ce_lce:ce_s": {
+      "stack": 0.96540136168684,
+      "family": "expf05",
+      "thr": 0.0,
+      "val_claims": 0.9665995042978567,
+      "val_plain": 0.9665995042978567,
+      "all_families": {
+        "expf05|0.0": 0.96540136168684,
+        "expf05|0.04": 0.9653458061312846
+      }
+    },
+    "lce_only": {
+      "stack": 0.8538982683993563,
+      "family": "expf05",
+      "thr": 0.0,
+      "val_claims": 0.8554631165275668,
+      "val_plain": 0.8550489943560359,
+      "all_families": {
+        "expf05|0.0": 0.8538982683993563
+      }
+    }
+  },
+  "six_features_gate": {
+    "stack_gain": 0.0032408883134128486,
+    "required": 0.002,
+    "passes": true,
+    "gain_rank_of": {
+      "x_empty": 110,
+      "x_name_eq": 109,
+      "x_name_ns_eq": 98,
+      "x_n_s1_cand_name": 10,
+      "x_n_s1_cand_name_ns": 6,
+      "x_n_s1_own_name": 11
+    },
+    "top20_required": [
+      "x_n_s1_own_name",
+      "x_n_s1_cand_name_ns"
+    ]
+  },
+  "structure_gate": {
+    "stack_gain": 0.003322323821902784,
+    "required": 0.0005,
+    "passes": true
+  }
+}
