@@ -1,8 +1,4 @@
-# model-5 — Business Entity Resolution
-
-Status on 2026-09-27: **finished**. The full run completed at 13:43. The submission in `output/` passes the organisers'
-validator with `--check-ids`. Every number below was read from `work/reports/`, `work/models/stage2_bundle.json` and
-`work/state/*.done` after the run.
+# Business Entity Resolution
 
 | | |
 |---|---|
@@ -10,19 +6,11 @@ validator with `--check-ids`. Every number below was read from `work/reports/`, 
 | Validation macro F0.5 (100,000 held-out S1, US + India) | **0.98739** with competitor claims, 0.98731 plain (India 0.98728, US 0.98747) |
 | Chosen configuration | stage-2 LightGBM `ce`: base features + six name-sharing features + mDeBERTa + bge-reranker, exact expected-F0.5 decision |
 | Against the v2 line (model-4 + six features, stack 0.98543) | **+0.00144**, above the +0.001 switch rule in `DESIGN.md` §5 |
-| Submission | `output/matching_results.tsv` + `output/candidate_pairs.tsv`, validator **PASS** (1,732,544 rows) |
-| Package | `PopTards_submission.zip` (148 MB, 28 files), structure as in `ps.pdf` |
-| Leaderboard | not submitted yet |
-
-Companion documents:
-- `DESIGN.md`: the design this was built from (LIFTOVER v2, the team's plan). It was `README.md` until the run finished.
-- `docs/PACKAGE_README.md`: the reproduction guide shipped in the zip (`code/business_entity_resolution/README.md`).
-- `work/reports/Documentation.md`: the filled-in methodology template shipped in the zip.
 
 ## 1. Pipeline as built
 
 ```
-dataset/og (HF Jyo-K/PopTards_Machine_Code)   pre-computed embeddings: e5-large, bge-m3, e5-small (no new ones)
+dataset/og (HF Jyo-K/PopTards_Machine_Code)   pre-computed embeddings: e5-large, bge-m3, e5-small
   │  fetch (downloads only what is missing) → manifest (fatal: ids, rows, norms, row alignment)
   │  prep: label-free normalisation of all 24.2M records (model-4's text_utils) → splits
   ▼
@@ -143,22 +131,6 @@ cd src && python run_pipeline.py --reset <stage>   # rerun a stage and everythin
 | lce_train | 82.3 | ename train / test | 4.3 / 6.2 |
 | featx train / test | 14.0 / 21.4 | rev train / test | 4.6 / 18.0 |
 | CE test inference, 17.6M pairs × 2 models | about 4 h on the shared cards | stage2 prelim / train / test | 17.4 / 12.9 / 11.9 |
-
-### Colab lanes (built, not yet used)
-
-`src/remote.py` plus `~/Desktop/ML Challenge/Model5_CE_Colab.ipynb` offload cross-encoder test shards to up to three
-Colab notebooks, through a private HF dataset repo:
-
-```bash
-# needs a WRITE token in ~/.hf_m5_token (chmod 600)
-python src/remote.py export --key b --split test --lanes A,B,C --per-lane 6
-python src/remote.py import --key b --split test    # background; imports results as they arrive
-python src/remote.py status --key b --split test
-```
-
-- The notebook checks parity against server-scored pairs before it uploads anything.
-- A lane that stops making progress releases its shards after 2.5 h.
-- This path has **not been run end to end yet**.
 
 ## 4. Layout
 
