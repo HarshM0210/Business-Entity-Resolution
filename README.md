@@ -1,11 +1,8 @@
 # Business Entity Resolution
 
-| | |
-|---|---|
-| Stack out-of-fold macro F0.5 (selection split, 200,000 S1, competitor claims) | **0.98687** |
-| Validation macro F0.5 (100,000 held-out S1, US + India) | **0.98739** with competitor claims, 0.98731 plain (India 0.98728, US 0.98747) |
-| Chosen configuration | stage-2 LightGBM `ce`: base features + six name-sharing features + mDeBERTa + bge-reranker, exact expected-F0.5 decision |
-| Against the v2 line (model-4 + six features, stack 0.98543) | **+0.00144**, above the +0.001 switch rule in `DESIGN.md` §5 |
+**Amazon ML Challenge 2026**
+
+Multi-source business entity resolution using multi-retriever blocking and cross-encoder reranking.
 
 ## 1. Pipeline as built
 
